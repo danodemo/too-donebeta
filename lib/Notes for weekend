@@ -1,0 +1,13 @@
+Notes for weekend
+--Figure out the schema
+Migrations for tasks and todolists
+
+--Associations
+Figure out associations for each model (they can have multiple associations)
+  --> Users has_many todolists
+  --> Todolists owned_by users; has_many tasks
+  --> Tasks owned_by todolists
+
+  The command "find_or_create_by" will need to be used to assign tasks to the right list for each user
+
+  Put LOGGING=true before the commands to see SQL data on them.
